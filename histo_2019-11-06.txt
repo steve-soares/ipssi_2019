@@ -1,0 +1,646 @@
+    1  cd ..
+    2  cdd toto
+    3  cd toto
+    4  cd steve
+    5  ls
+    6  ls -la
+    7  ls -a
+    8  ls -l /
+    9  mkdir rep
+   10  ls
+   11  cd rep
+   12  man ls
+   13  mkdir
+   14  touch fichier
+   15  ls
+   16  ls -l
+   17  cp src dest
+   18  cp -a fichier fichier2
+   19  cp fichier fichier2
+   20  ls -l
+   21  cp -a
+   22  mv fichier2 fichier3
+   23  mv fichier3 ..
+   24  ls
+   25  cd ..
+   26  ls
+   27  cd rep
+   28  touch fichier
+   29  echo $?
+   30  mv toto
+   31  curl monip.org
+   32  cd
+   33  nano creer.sh
+   34  ls
+   35  cat creer.sh
+   36  tac creer.sh
+   37  sh
+   38  sh creer.sh
+   39  sh
+   40  ps axf
+   41  ls / | grep 
+   42  ls / | grep a --color
+   43  ls -l / | grep b --color
+   44  ls -l / | grep bin
+   45  sudo apt install wfrench
+   46  grep voit /usr/share/dict/french
+   47  grep eu /usr/share/dict/french
+   48  grep -vb
+   49  grep -v b/usr/share/dict/french
+   50  grep -v b /usr/share/dict/french
+   51  time grep voit /usr/share/dict/french
+   52  fgrep voit /usr/share/dict/french
+   53  fgrep a.c /usr/share/dict/french
+   54  grep a.c /usr/share/dict/french
+   55  grep a.*c /usr/share/dict/french
+   56  curl https://crisco2.unicaen.fr/des/synonymes/synonyme
+   57  curl https://crisco2.unicaen.fr/des/synonymes/voiture
+   58  ls /mnt/c
+   59  ls /mnt/c/users
+   60  ls /mnt/c/steve
+   61  ls /mnt/c/voiture
+   62  ls /mnt/c/users/steve
+   63  ls /mnt/c/users/steve/downloads
+   64  4
+   65  ls /mnt/c/users/steve/downloads
+   66  cat /mnt/c/users/steve/downloads/voiture.html 
+   67  cat /mnt/c/users/steve/downloads/voiture.html |grep
+   68  cat /mnt/c/users/steve/downloads/voiture.html |grep syno
+   69  cat /mnt/c/users/steve/downloads/voiture.html |grep syno| sed -e 's/<[^>]*//g'
+   70  mkdir "a"
+   71  nano creer2.sh
+   72  sh creer2.sh
+   73  sh
+   74  more a.log
+   75  head a.log
+   76  cat a.log | cut -f2
+   77  cat a.log | cut -f1
+   78  cat a.log | cut -d' ' -f1
+   79  cat a.log | awk '{print $1}' | wc -1
+   80  cat a.log | awk '{print $1}' | uniq | wc -1
+   81  cat a.log | awk '{print $1}' | uniq | wc -l
+   82  cat a.log | awk '{print $1}' | sort | uniq | wc -l
+   83  cat a.log | awk '{print $1}' | sort | uniq | head
+   84  cat a.log | awk '{print $1}' | sort | uniq -c |sort -n
+   85  cat a.log | awk '{print $1}' | sort | uniq -c |sort -n | tail -1
+   86  apt update
+   87  apt install ccze
+   88  sudo apt install ccze
+   89  apt install ccze
+   90  sudo apt install ccze
+   91  sudo apt update
+   92  cat a.log | awk '{print $7}' | sort | uniq -c |sort -n
+   93  cat a.log | awk '{print $-2}' | sort | uniq -c |sort -n
+   94  cat a.log | awk '{print $-7}' | sort | uniq -c |sort -n
+   95  cat a.log | awk '{print $7}' | sort | uniq -c |sort -n
+   96  cat a.log | awk '{print $7}' | sort | uniq -c |sort -n | tail -1
+   97  cat a.log | awk '{print $7}' | sort | uniq -c |sort -n | tail -2
+   98  cat a.log | awk '{print $7}' | sort | uniq -c |sort -n | tail -1
+   99  cat a.log | awk '{print $7}' | sort | uniq -c |sort -n
+  100  cat a.log | awk '{print $(NF-2)}' | head -1
+  101  cat a.log | awk '{print $(NF-2)}' | tail -1
+  102  cat a.log |awk '{print $(NF-2)}' | tail -1
+  103  cat a.log |awk '{print $(NF-2)}' | sort | tail -1
+  104  grep 1.861 a.log
+  105  echo $((3+5))
+  106  echo $((500/3))
+  107  echo $(echo aaaa)
+  108  echo aaa | tr a-z A-Z
+  109  echo aaa | tr a-z 0-9
+  110  echo aabz | tr a-z 0-9
+  111  echo aa.bz | tr -d
+  112  nano bashrc
+  113  nano del.sh
+  114  ls -lrt | tail -2
+  115  touch a b ;  mkdir -p /tmp/old
+  116  ls
+  117  ls -ld /tmp/old/
+  118  ls  /
+  119  which ls
+  120  ls /bin
+  121  ls / 
+  122  ~ ls /
+  123  ls /
+  124  ls -lrt | tail -2 | xargs -i echo '{}' /tmp/old
+  125  ls -lrt | tail -2 | xargs -i echo '{}' /tmp/old/.
+  126  ls -rt | tail -2 | xargs -i echo '{}' /tmp/old/
+  127  ls -rt | tail -2 | xargs -i echo mv '{}' /tmp/old/
+  128  ls -rt | tail -2 | xargs -i echo mv -v '{}' /tmp/old/. | sh
+  129  man man
+  130  man ls
+  131  ssh
+  132  man man 
+  133  name
+  134  man man 
+  135  man tail
+  136  ps - elf
+  137  ps -elf
+  138  ps -edf
+  139  ps- axf
+  140  ps -auxf
+  141  htop
+  142  ps -axf
+  143  htop
+  144  ps a
+  145  ps -edf
+  146  df -h
+  147  df- k
+  148  df -k
+  149  free -h
+  150  htop
+  151  free -h
+  152  htop
+  153  bc -ql
+  154  htop
+  155  ls -l/bin | more
+  156  ls -l /bin | more
+  157  ls > /tmp/ls.log
+  158  cat /etc/passwd | more
+  159  echo bonjour | rev
+  160  echo bonjour | wc
+  161  echo bonjour | wc > /tmp/count.log
+  162  ls > /tmp/ls.log
+  163  echo $!
+  164  echo $?
+  165  ls /sdfsdf
+  166  ls /sdfsdf 2> /tmp/ls_err.log
+  167  echo $?
+  168  htop
+  169  ls | more
+  170  cat /etc/passwd | more
+  171  cat /etc/passwd | cut -d: -f1
+  172  head /etc/passwd
+  173  cat /etc/passwd | cut -d: -f1
+  174  head /etc/passwd
+  175  cat /etc/passwd | cut -d: -f6
+  176  wget 192.168.22.13.7777/a.log
+  177  wget 192.168.22.13:7777/a.log
+  178  del.sh
+  179  nano del.sh
+  180  dgfhghghfgirfhfhgjqlqlapaozizieuyrtgghnvbvwgqbqj
+  181  nano del.sh
+  182  curl www.google.com
+  183  curl -l localhost
+  184  curl -I localhost
+  185  zcurl -I localhost
+  186  curl -I www.google.com
+  187  vim.sh
+  188  vim .sh
+  189  date +%R
+  190  date
+  191  mkdir rendu/ex01
+  192  mkdir rendu
+  193  cd rendu
+  194  touch rendu/ex01
+  195  touch ex01
+  196  ls
+  197  nano ex01
+  198  rm ex01
+  199  ls
+  200  touch heure1.sh
+  201  LS
+  202  ls
+  203  nano heure1.sh 
+  204  rm nano heure1.sh 
+  205  rm heure1.sh
+  206  ls
+  207  mkdir ex01
+  208  ls
+  209  cd ex01/
+  210  touch heure1.sh
+  211  ls
+  212  nano heure1.sh
+  213  ./heure1.sh
+  214  chmod +x heure1.sh
+  215  ./heure1.sh
+  216  cd
+  217  cd rendu
+  218  mkdir ex02
+  219  ls
+  220  cd ex02
+  221  touch heure2.sh
+  222  ls
+  223  nano heure2.sh
+  224  chmod +x heure2.sh
+  225  ./heure2.sh
+  226  cd
+  227  cd rendu
+  228  mkdir ex03
+  229  ls
+  230  nano cd.sh
+  231  ./cd.sh
+  232  chmod +x cd.sh
+  233  ./cd.sh
+  234  echo $?
+  235  ls
+  236  cd apple
+  237  ls
+  238  cd apple 
+  239  cd
+  240  mkdir rendu
+  241  cd rendu
+  242  mkdir ex04
+  243  ls
+  244  touch verification.sh
+  245  nano verfication.sh
+  246  man test
+  247  nano verfication.sh
+  248  chmod +x verification.sh
+  249  ./verification.sh
+  250  echo $?
+  251  nano verification.sh 
+  252  ./verification.sh
+  253  nano verification.sh 
+  254  ./verification.sh
+  255  cd
+  256  cd rendu
+  257  mkdir ex05
+  258  ls
+  259  touch test_curl.sh
+  260  nano test_curl.sh
+  261  ./ex05/test_curl.sh www.google.com
+  262  ./test_curl.sh www.google.com
+  263  chmod +x test_curl.sh
+  264  ./test_curl.sh www.google.com
+  265  ./test_curl.sh localhost
+  266  cd
+  267  cd rendu
+  268  mkdir ex06
+  269  ls
+  270  touch historique.sh
+  271  nano historique.sh
+  272  chmod +x historique.sh
+  273  . ./historique.sh
+  274  cd
+  275  cd rendu
+  276  ls
+  277  mkdir ex07
+  278  touch add.sh
+  279  chmod +x add.sh
+  280  nano add.sh
+  281  ./add.sh 15 15
+  282  cd
+  283  cd rendu
+  284  mkdir ex08
+  285  ls
+  286  touch sum200
+  287  nano sum200
+  288  cd ex08
+  289  rm sum200
+  290  ls
+  291  touh sum200.sh
+  292  touch sum200.sh
+  293  chmod +x sum200.sh
+  294  nano sum200.sh
+  295  for i in {0..200};do echo $i;done | ./sum200.sh
+  296  nano sum200.sh
+  297  for i in {0..200};do echo $i;done | ./sum200.sh
+  298  nano sum200.sh
+  299  for i in {0..200};do echo $i;done | ./sum200.sh
+  300  nano sum200.sh
+  301  for i in {0..200};do echo $i;done | ./sum200.sh
+  302  cd
+  303  cd rendu
+  304  mkdir ex09
+  305  ls
+  306  mkdir ex09
+  307  cd ex09
+  308  touch mean200
+  309  ls
+  310  cd rendu
+  311  cd
+  312  cd rendu
+  313  ls
+  314  cd ex07
+  315  ls
+  316  cd
+  317  cd rendu
+  318  cd ex03
+  319  ls
+  320  cd
+  321  cd rendu
+  322  rmdir apple
+  323  ls
+  324  cd ex06
+  325  ls
+  326  cd
+  327  cd rendu
+  328  cd ex05
+  329  ls
+  330  cd
+  331  cd rendu
+  332  cd ex04
+  333  ls
+  334  cd
+  335  cd rendu
+  336  mv add.sh /ex07
+  337  sudo mv add.sh /ex07
+  338  cd ex01
+  339  ls
+  340  cd
+  341  cd rendu
+  342  cd ex02
+  343  ls
+  344  cd
+  345  cd rendu
+  346  cd ex03
+  347  ls
+  348  cd
+  349  cd rendu
+  350  cd
+  351  cd rendu
+  352  ls
+  353  cp /rendu/cd.sh/ex03/cd.sh
+  354  cp /rendu/cd.sh/ex03
+  355  cp /rendu/cd.sh/rendu/ex03/cd.sh
+  356  cp cd.sh rendu/ex03
+  357  cp cd.sh ex03/
+  358  echo $?
+  359  cd ex03
+  360  ls
+  361  cd
+  362  cd rendu
+  363  rm cd.sh
+  364  ls
+  365  cd ex03
+  366  ls
+  367  cd
+  368  cd rendu
+  369  cp add.sh ex07/
+  370  cd ex07
+  371  ls
+  372  cd
+  373  cd rendu
+  374  rm add.sh
+  375  ls
+  376  cd ex07
+  377  ls
+  378  cd
+  379  cd rendu
+  380  cp historique.sh ex06/
+  381  ls
+  382  cd ex06
+  383  ls
+  384  cd
+  385  cd rendu
+  386  rm historique.sh
+  387  ls
+  388  cd ex08
+  389  ls
+  390  cd
+  391  cd rendu
+  392  rm sum200
+  393  ls
+  394  cd
+  395  cd rendu
+  396  cd ex04
+  397  ls
+  398  cd
+  399  cd rendu
+  400  nano verification.sh
+  401  nano verfication.sh 
+  402  rm verfication.sh
+  403  ls
+  404  cd
+  405  cd rendu
+  406  cp verification.sh ex04/
+  407  ls
+  408  cd
+  409  cd rendu
+  410  cd ex04
+  411  ls
+  412  cd
+  413  cd rendu
+  414  rm verification.sh
+  415  ls
+  416  cd
+  417  cd rendu
+  418  cp test_curl.sh ex05
+  419  cd ex05
+  420  ls
+  421  cd 
+  422  cd rendu
+  423  rm test_curl.sh
+  424  ls
+  425  cd ex09
+  426  touch mean200.sh
+  427  nano mean200.sh
+  428  chmod +x mean200.sh
+  429  for i in {0..200};do echo $i;done | ./mean200.sh
+  430  nano mean200.sh
+  431  for i in {0..200};do echo $i;done | ./mean200.sh
+  432  cd
+  433  cd rendu
+  434  ls
+  435  mkdir ex10
+  436  cd ex10
+  437  touch mean_sum200.sh
+  438  nano mean_sum200.sh
+  439  cd
+  440  cd rendu
+  441  ls
+  442  cd ex09
+  443  ls
+  444  nano mean200
+  445  ls
+  446  rm mean200
+  447  ls
+  448  nano mean200.sh 
+  449  cd
+  450  cd rendu
+  451  cd ex10
+  452  nano mean_sum200.sh
+  453  for i in {0..200};do echo $i;done | ./mean_sum200.sh
+  454  chmod +x mean_sum200.sh 
+  455  for i in {0..200};do echo $i;done | ./mean_sum200.sh
+  456  cd
+  457  cd rendu
+  458  ls -l
+  459  cd
+  460  dat=$(date +%Y-%m-%d)
+  461  tar zcvf ${USER}_${dat}.tar.gz rendu
+  462  cp ${USER}_${dat}.tar.gz /mnt/c/Users/steve/Desktop/ .
+  463  cp ${USER}_${dat}.tar.gz /mnt/c/Users/steve/Desktop/.
+  464  ssh-keygen
+  465  cd .ssh/
+  466  ls -lrt
+  467  cat id_rsa.pub
+  468  cd
+  469  mkdir -p gits
+  470  cd gits
+  471  git@github.com:steve-soares/test.git
+  472  git clone git@github.com:steve-soares/test.git
+  473  cd test/
+  474  ls -l
+  475  nano README.md
+  476  cat README.md
+  477  nano README.md
+  478  cat README.md
+  479  ls -la
+  480  git status
+  481  ls -l .git
+  482  cat README.md
+  483  nano README.md
+  484  git status
+  485  git diff
+  486  git commit README.md
+  487  head -4  ~/.gitconfig
+  488  git config --global user.email "steve.coubertin@gmail.com"
+  489  git config --global user.name "steve-soares"
+  490  git commit README.md
+  491  git log
+  492  git push
+  493  nano test.sh
+  494  cat test.sh
+  495  git status
+  496  git add test.sh
+  497  git status
+  498  git push
+  499  git log
+  500  git blame test.sh
+  501  nano arg.sh
+  502  chmod +x arg.sh
+  503  ls -l arg.sh
+  504  ./arg.sh
+  505  ./arg.sh sdf
+  506  nano arg.sh
+  507  ./arg.sh localhost
+  508  ./arg.sh 192.168.22.13
+  509  echo $?
+  510  nano arg.sh
+  511  ./arg.sh
+  512  echo $?
+  513  ./arg.sh && echo "test ok"
+  514  ./arg.sh && echo "test ok" || "test FAIL"
+  515  ./arg.sh && echo "test ok" || echo "test FAIL"
+  516  ./arg.sh > /dev/null && echo "test ok" || echo "test FAIL"
+  517  if ./arg.sh > /dev/null;then echo "test ok" || else echo "test FAIL"
+  518  if ./arg.sh > /dev/null;then echo "test ok" else echo "test FAIL"; ./arg.sh > /dev/null && echo "test ok" || echo "test FAIL"; 
+  519  ./arg.sh > /dev/null && echo "test ok" || echo "test FAIL"
+  520  nano arg.sh
+  521  ./arg.sh 
+  522  ./arg.sh www.google.com
+  523  nano arg.sh
+  524  ./arg.sh 
+  525  ./arg.sh www.google.com
+  526  nano arg.sh
+  527  ./arg.sh 
+  528  ./arg.sh www.google.com
+  529  nano arg.sh
+  530  echo {1..15}
+  531  mkdir compress
+  532  touch compress/{a,z}
+  533  echo compress/{a,z}
+  534  find compress
+  535  tar zcvf test.tar.gz compress/
+  536  ls -lrt test.tar.gz
+  537  rn -rf compress/
+  538  tar zxvf test.tar.gz
+  539  tar tvf test.tar.gz
+  540  rm -rf compress/
+  541  tar xvf test.tar.gz
+  542  man touch
+  543  man find
+  544  ls -I /mnt/c/Users/steve/Desktop
+  545  ls -I /mnt/c/Users/"steve"/Desktop
+  546  ls -l /mnt/c/Users/"steve"/Desktop
+  547  cp test.tar.gz /mnt/c/User/steve/Desktop/.
+  548  cp test.tar.gz /mnt/c/Users/steve/Desktop/.
+  549  nano arg.sh
+  550  cd
+  551  cd gits
+  552  ls -lrt
+  553  cd kit
+  554  cd test
+  555  git status
+  556  ls -l .git/
+  557  ls -la
+  558  ls -lrt
+  559  echo "a" > fichier_a
+  560  ls -lrt
+  561  git status
+  562  git branch
+  563  git branch branch1
+  564  git branch
+  565  git checkout branch1
+  566  git branch
+  567  git status
+  568  git add fichier_a
+  569  git status
+  570  git commit -m 'ajout fichier a'
+  571  git push
+  572  git push --set-upstream origin branch1
+  573  git b
+  574  git branch
+  575  git pull
+  576  git checkout master
+  577  git branch
+  578  git pull
+  579  git status
+  580  ls -lrt
+  581  git branch
+  582  git branch -d branch1
+  583  git branch
+  584  vin fichier_a
+  585  vim fichier_a
+  586  git diff
+  587  git commit -m 'ajout cc' fichier_a
+  588  git push
+  589  git pull
+  590  vim fichier_a 
+  591  git add fichier_a
+  592  git commit -m 'fix conflict'
+  593  git push
+  594  git log
+  595  git checkout 51cee3ba
+  596  ls -l
+  597  git checkout master
+  598  ls -l
+  599  touch bbb
+  600  touch ccc
+  601  git status
+  602  git stash
+  603  ls -l
+  604  echo bbb > bbb
+  605  echo ccc > ccc
+  606  git status
+  607  git branch
+  608  git stash
+  609  git pull
+  610  git add bbb ccc
+  611  git stash
+  612  ls -l
+  613  git stash pop
+  614  ls -l
+  615  git@github.com:steve-soares/ipssi_2019.git
+  616  git clone git@github.com:steve-soares/ipssi_2019.git
+  617  cd
+  618  gits
+  619  cd gits
+  620  git clone git@github.com:steve-soares/ipssi_2019.git
+  621  ls -ld
+  622  cd ipssi_2019
+  623  ls -lrt
+  624  nano README.md
+  625  git commit -m 'modification README.md'
+  626  git add README.md
+  627  git commit -m 'modification README.md'
+  628  git push
+  629  ls -lrt
+  630  mkdir scripts
+  631  ls -lrt
+  632  cd ../..
+  633  ls _lrt
+  634  ls -lrt
+  635  cp creer.sh creer2.sh del.sh arg.sh ./gits/ipssi_2019/scripts/
+  636  cp -a ./rendu/ ./gits/ipssi_2019/scripts/
+  637  cd gits/ipssi_2019/scripts
+  638  ls -lrt
+  639  cd ../
+  640  git status
+  641  git add scripts
+  642  git status
+  643  git commit -m 'ajout des scripts'
+  644  git push
+  645  history
+  646  history > histo_2019-11-06.txt
