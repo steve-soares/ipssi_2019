@@ -6,3 +6,4 @@ if curl -s -I $1 >/dev/null ;then
 else 
 	echo "FAIL"
 fi
+exit 0
